@@ -1,7 +1,7 @@
 # Revolt Voice (Gemini Live, server-to-server)
 
 ## Run
-1. `npm i`
+1. `npm install`
 2. Create `.env` with:
 3. `node server.js`
 4. Open `http://localhost:3000` and click **Start Talking**.

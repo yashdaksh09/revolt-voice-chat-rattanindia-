@@ -2,7 +2,7 @@ require('dotenv').config();
 const http = require("http");
 const express = require("express");
 const app = express();
-const { WebSocketServer } = require('ws');
+const { WebSocketServer } = require('ws');  // import scoket
 const { GoogleGenAI } = require("@google/genai");
 
 const server = http.createServer(app);
@@ -16,7 +16,7 @@ const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 console.log("Server setup is complete. Waiting for connections");
 
 wss.on("connection", async (ws) => {
-    console.log("Client is connected");
+    console.log("Client is connected");//create connection to server
 
     ws.on("message", async (message) => {
         const audioBuffer = Buffer.from(message); // Or Buffer.from(message, 'base64') if frontend sends base64
