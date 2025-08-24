@@ -1,0 +1,20 @@
+{
+  "name": "revolt-bot",
+  "version": "1.0.0",
+  "description": "1. `npm i`\r 2. Create `.env` with:\r 3. `node server.js`\r 4. Open `http://localhost:3000` and click **Start Talking**.",
+  "main": "check-gemini.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.15.0",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
+  }
+}
